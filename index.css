@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('Mainpic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #a4e6d0;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #232222;
+}
+
+nav a {
+  color: rgb(255, 0, 0);
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-flex-row {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-flex-row li {
+  list-style-type: none;
+  padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+  font-family: 'Arial';
+  color: #ffffff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 150;
+}
+
+.section-intro {
+  height: 820px;
+  background-image: url('Mainpic.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-intro h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  padding: 160px;
+  font-weight: 700;
+  text-shadow: 1px 2px #0e0e0e;
+}
+
+.link-to-book-wrapper {
+  flex: 3;
+}
+
+.link-to-book {
+  color: #c4eee7;
+  display: block;
+  border: 3px solid #a4f6ff;
+  border-radius: 8px;
+  margin: 50px;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+}
+
+.link-to-book:hover {
+  background-color: #ffffff;
+  color: #3c2f2f;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.about-section article {
+  background-color: #d0f1ebdf;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 2500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s;
+}
+
+.about-section article:hover {
+  transform: scale(1.02);
+}
+
+.about-section h3 {
+  font-size: 2.5em;
+  color: #232222;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 25px;
+}
+
+.about-section p {
+  font-size: 1.4em;
+  color: #666666;
+  line-height: 1.5;
+  width: 100%;
+  margin:auto;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.carousel-inner {
+  height: 900px;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .contact-adress {
+    text-align: right;
+  }
+
+  .contact-adress span {
+    display: inline;
+    margin: 0 5px;
+  }
+
+  .section-intro {
+    height: 500px;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 1.2em;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    flex-direction: column;
+  }
+
+  .link-to-book {
+    font-size: 1.2em;
+  }
+  .link-to-book:hover {
+    background-color: #ffffff;
+    color: #3c2f2f;
+    text-decoration: none;
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 576px) {
+  .section-intro {
+    height: 300px;
+  }
+.link-to-book {
+    font-size: 1.2em;
+  }
+  .about-section {
+    padding: 30px;
+  }
+
+  .section-intro h1 {
+    font-size: 2em;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 1em;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    flex-direction: column;
+  }
+
+  .row-flex h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .form-group p {
+    font-size: 1em;
+  }
+
+  .opening-time p span,
+  .contact-adress p span {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .link-to-book {
+    font-size: 1em;
+    padding: 8px 4px;
+  }
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image {
+  width: 45%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.preview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.preview-image {
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

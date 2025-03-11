@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> About LGSF</title>
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <header>
+    <h1>OurWorks</h1>InstaBuild
+    <nav>
+      <ul>
+        <li><a href="mailto:futurecrafts9@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <style>
+        .image-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .image {
+          width: 75%;
+          margin-bottom: 50px;
+          cursor: pointer;
+        }
+        .preview {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+        .preview-image {
+          max-width: 80%;
+          max-height: 80%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <script>
+        function showPreview(image) {
+          var preview = document.getElementById("preview");
+          var previewImage = document.getElementById("preview-image");
+    
+          previewImage.src = image.src;
+    
+          preview.style.display = "block";
+        }
+    
+        function hidePreview() {
+          var preview = document.getElementById("preview");
+          preview.style.display = "none";
+        }
+      </script>
+    </head>
+    <body>
+      <div class="image-container">
+        <img src="res.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+        <img src="res2.jpg" alt="Image 2" class="image" onclick="showPreview(this);">
+      </div>
+      <section id="about">
+        <h2>OurWorks</h2>
+        <p>Our Projects provides the best built in cottage house Every part of india and we work on the 
+          belive that our thing we made with full of potential and enthausim and can able to surive 
+          in the worst condition and make it more stable in hilly area with beautiful scenery.
+        </p>
+      </section>
+      <div class="image-container">
+        <img src="portal.jpg" alt="Image 3" class="image" onclick="showPreview(this);">
+        <img src="cons5.jpg" alt="Image 4" class="image" onclick="showPreview(this);">
+      </div>
+      <section id="about">
+        <h2>OurWorks</h2>
+        <p>Our Projects provides the best built in cottage house Every part of india and we work on the 
+          belive that our thing we made with full of potential and enthausim and can able to surive 
+          in the worst condition and make it more stable in hilly area with beautiful scenery.
+        </p>
+      </section>
+      <div class="image-container">
+        <img src="portal.jpg" alt="Image 3" class="image" onclick="showPreview(this);">
+        <img src="cons5.jpg" alt="Image 4" class="image" onclick="showPreview(this);">
+      </div>
+      <div id="preview" class="preview" onclick="hidePreview();">
+        <img id="preview-image" class="preview-image">
+      </div>
+    </body>
+    <body>
+        
+
+<style>
+
+</style>
+    
+</body>
+    <style>
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .image {
+        width: 45%;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .preview {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .preview-image {
+        max-width: 80%;
+        max-height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script>
+      function showPreview(image) {
+        var preview = document.getElementById("preview");
+        var previewImage = document.getElementById("preview-image");
+          previewImage.src = image.src;
+          preview.style.display = "block";
+      }  
+      function hidePreview() {
+        var preview = document.getElementById("preview");
+        preview.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="con1.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+      <img src="cons2 copy.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+    </div>
+    <div id="preview" class="preview" onclick="hidePreview();">
+      <img id="preview-image" class="preview-image">
+    </div>
+  </body>
+  
+  <H3 align="center"><a href="index.html"> HOME</a></H3>
+</body>
+</html>
